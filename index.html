@@ -7,6 +7,81 @@
   <title>Italian-Pizza</title>
 </head>
 <body>
-  
+    <div class="modal-body">
+        <form id="pizza-one-form">
+          <label>
+            Quantity:
+            <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+          </label>
+          <br>
+          <label>
+            Pick Your Size:
+            <select class="form-control drop" id="size-selector" required>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <br>
+          <label>
+            Topping Options:
+            <select class="form-control drop" id="topping-selector" required>
+              <option>Standard</option>
+              <option>Double Toppings</option>
+              <option>Extra Cheese</option>
+              <option>Extra Dip</option>
+              <option>Diced Pineapples</option>
+            </select>
+          </label>
+          <br>
+          <label>
+            Crust Options:
+            <select class="form-control drop" id="crust-selector" required>
+              <option>Standard</option>
+              <option>Italian Thin Crust</option>
+              <option>Pan Pizza</option>
+              <option>American Hand Tossed</option>
+            </select>
+          </label>
+          <div class="form-check">
+            <label for="delivery-options">
+              Delivery:
+              <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
+            </label>
+            <label for="delivery-options">
+              Pick Up:
+              <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked" required>
+            </label>
+            <br>
+            <label id="location-hide">
+              <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location">
+            </label>
+          </div>
+          <div class="container">
+            <div class="summary">
+              <div id="price-breakdown">
+                <div class="summary-items">
+                  <p class="space"><span id="size-price"></span></p>
+                </div>
+                <div class="summary-items">
+                  <p class="space"><span id="toppings-price"></span></p>
+                </div>
+                <div class="summary-items">
+                  <p class="space"><span id="crust-price"></span></p>
+                </div>
+                <div class="summary-items">
+                  <p class="space"><span id="delivery-price"></span></p>
+                </div>
+              </div>
+              <div class="summary-items total" id="total">
+                <h5 class="sum-price" id="total-price"></h5>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-primary" id="get-price" value="Next">
+            <button type="button" class="btn btn-primary" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
+          </div>
+
+        </form>
+      </div>
 </body>
 </html>
