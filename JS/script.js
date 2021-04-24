@@ -413,6 +413,7 @@ $(function () {
 
   //Pick Up
   $(".delivernot").click(function () {
+    alert('Your order has been received')
 
   });
 
