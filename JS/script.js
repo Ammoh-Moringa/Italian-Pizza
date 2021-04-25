@@ -395,8 +395,7 @@ $(function () {
             newOrder.n + "<br>" + "Total Price :  " +
             newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
-
-    //Deliver
+    
     $(".deliver").click(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
